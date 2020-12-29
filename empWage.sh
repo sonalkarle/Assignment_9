@@ -1,36 +1,28 @@
 #!/bin/bash -x
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 #check employee is present or not 
 #Take one constant
-=======
 #Adding part time Employee wage
 #Take constant for code
 isparttime=1;
 isfulltime=2;
 empRatePerHr=20;
-=======
+
 #Calculating wages till number of working days or total working hour per month is reached
-=======
+
 #Refactor the code to write a function to get work hours
->>>>>>> UC7_Refactorcode_writefunction_togetworkhours
+##UC7_Refactorcode_writefunction_togetworkhours
 #Take constant for code
 isfulltime=1
 isparttime=2
 Salary=0
 empRatePerHr=20
-<<<<<<< HEAD
+
 MaxWorkingday=20
 MaxWorkingHr=60
 TotalworkingDays=1;
 TotalworkingHrs=0;
-=======
+
 #Store the day and the daily wage along with total wage
 #Take constamt for code
 isfulltime=1
@@ -76,7 +68,7 @@ echo "Array elements" ${dailyWageArray[@]}
 echo "Index" ${!dailyWageArray[@]}
 
 echo "Employee wage per month:" $totalSalary
->>>>>>> UC9_Storedayanddailyewage_withtotalwage
+##UC9_Storedayanddailyewage_withtotalwage
 
 #Applying condition for different scenarios for finding max days and max hours
 while [[ $TotalworkingHrs -lt $MaxWorkingHr && $TotalworkingDays -lt $MaxWorkingday ]]
@@ -85,7 +77,7 @@ do
 
         empCheck=$((RANDOM%3))
 #Apply case statement for conditons
-=======
+
 #Store the daily wage along with the total wage
 #Take constant for code
 isfulltime=1
@@ -103,7 +95,7 @@ do
         ((totalWorkingDays++))
         empCheck=$((RANDOM%3))
 #Apply case statment for checking differnt condition
->>>>>>> UC8_storedailywage_alongwithtotalwage
+##UC8_storedailywage_alongwithtotalwage
         case $empCheck in
                 $isfulltime)
                 echo "fullTime employee"
@@ -116,14 +108,14 @@ do
                 *)
                 echo "employee is Absent"
                 empHrs=0;;
-<<<<<<< HEAD
+
 	esac
 TotalworkingHrs=$(($TotalworkingHrs+$empHrs))
 done
 #find out the total salary
 TotalSalary=$(($TotalworkingHrs*$empRatePerHr ))
 echo "Employee wage per month:" $TotalSalary
->>>>>>> UC6_calculate_wages_for_totalworking_hours_formonth
+##UC6_calculate_wages_for_totalworking_hours_formonth
 
 #Generating input using random command
 	randomCheck=$((RANDOM%3))
@@ -140,7 +132,7 @@ else
 fi
 salary=$(($empHrs*$empRatePerHr))
 
->>>>>>> UC3_Add_parttime_Employee
+##UC3_Add_parttime_Employee
 
 	ispresent=1;
 
@@ -160,7 +152,7 @@ salary=$(($empHrs*$empRatePerHr))
 
 	echo "Employee is Absent"
 	fi
-=======
+
 #calculate the dailywage of Employee
 #Take one constant
 	ispresent=1;
@@ -176,8 +168,8 @@ salary=$(($empHrs*$empRatePerHr))
 		salary=0
 	fi
 	
->>>>>>> UC2_Calculate_employee_dailywage
-=======
+##UC2_Calculate_employee_dailywage
+
 #Solving add parttime and daily wage salary using cases
 #Take constant for code
 isparttime=1
@@ -200,8 +192,8 @@ case $empCheck in
 esac
 
 salary =$(($empHrs*$empRatePerHr))
->>>>>>> UC4_Solving_using_switch_case
-=======
+##UC4_Solving_using_switch_case
+
 #Calculating the wage for month using case statment
 #Take constant for code
 isfulltime=1
@@ -229,27 +221,27 @@ case $empCheck in
 		
 done
 echo $salary
->>>>>>> UC5_Calculating_Wages_month_using_Case_statment
-=======
+##UC5_Calculating_Wages_month_using_Case_statment
+
 MaxWorkingDay=20
 MaxWorkingHr=60
 TotalworkingDays=1
 TotalworkingHrs=0
 #Apply the function for employee working time
-=======
+
 		esac
 TotalworkingHrs=$(($TotalworkingHrs+$empHrs))
 
 done
 
 TotalSalary=$(($TotalworkingHrs*$empRatePerHrs ))
->>>>>>> UC8_storedailywage_alongwithtotalwage
+##UC8_storedailywage_alongwithtotalwage
 
 function getWorkHrs()
 {
         case $1 in
                 $isfulltime)
-<<<<<<< HEAD
+
                         empHrs=8
                 ;;
                 $isparttime)
@@ -265,7 +257,7 @@ function getWorkHrs()
 while [[ $TotalworkingHrs -lt $MaxWorkingHr && $TotalworkingDays -lt $MaxWorkingDay ]]
 do
        TotalworkingDay=$((TotalworkingDays+1))
-=======
+
                 	empHrs=8
                 	;;
                 $isparttime)
@@ -281,7 +273,7 @@ do
 while [[ $TotalworkingHrs -lt $MaxWorkingHrs && $TotalworkingDays -lt $MaxWorkingDays ]]
 do
         TotalworkingDays=$((TotalworkingDays+1))
->>>>>>> UC8_storedailywage_alongwithtotalwage
+##UC8_storedailywage_alongwithtotalwage
         empCheck=$((RANDOM%3))
         empHrs="$getWorkHrs $empCheck "
         TotalworkingHrs=$(( $TotalworkingHrs+$empHrs ))
@@ -289,10 +281,10 @@ do
 done
 TotalSalary=$(($TotalworkingHrs*$empRatePerHr ))
 
-<<<<<<< HEAD
-echo "Employee wage per month:" $TotalSalary
->>>>>>> UC7_Refactorcode_writefunction_togetworkhours
-=======
 
 echo "Employee wage per month:" $TotalSalary
->>>>>>> UC8_storedailywage_alongwithtotalwage
+##UC7_Refactorcode_writefunction_togetworkhours
+
+
+echo "Employee wage per month:" $TotalSalary
+##UC8_storedailywage_alongwithtotalwage
